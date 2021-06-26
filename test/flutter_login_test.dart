@@ -33,7 +33,6 @@ void main() {
     clickSubmitButton();
     await tester.pumpAndSettle();
 
-    // TODO: put error messages into variables
     expect(nameTextFieldWidget(tester).decoration!.errorText, 'Invalid email!');
 
     // missing '@'
@@ -709,7 +708,6 @@ void main() {
     addTearDown(() => clearScreenSize());
   });
 
-  // TODO: wait for flutter to add support for testing in web environment on Windows 10
   // https://github.com/flutter/flutter/issues/44583
   // https://github.com/NearHuscarl/flutter_login/issues/7
   testWidgets('AnimatedText should be centered in mobile and web consistently',

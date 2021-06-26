@@ -462,6 +462,7 @@ class _LoginCardState extends State<_LoginCard> with TickerProviderStateMixin {
                     : SizedBox.fromSize(
                         size: Size.fromHeight(10),
                       ),
+                // ignore: todo
                 // TODO: Fix animation size when ending. See #184
                 // auth.loginProviders.isNotEmpty && !widget.hideProvidersTitle
                 //     ? Row(children: <Widget>[

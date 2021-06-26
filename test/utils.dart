@@ -5,7 +5,6 @@ import 'package:flutter_login/flutter_login.dart';
 import 'package:flutter_login/src/constants.dart';
 import 'package:flutter_login/src/widgets/animated_button.dart';
 
-// TODO: get this value from fluter_login package
 const loadingAnimationDuration = Duration(seconds: 1);
 
 class LoginCallback {
