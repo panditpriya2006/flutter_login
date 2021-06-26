@@ -147,7 +147,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlutterLogin(
-      title: 'ECORP',
+      title: 'EarthWise',
       logo: 'assets/images/ecorp-lightblue.png',
       onLogin: _authUser,
       onSignup: _authUser,
@@ -207,7 +207,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlutterLogin(
-      title: 'ECORP',
+      title: 'EarthWise',
       logo: 'assets/images/ecorp-lightblue.png',
       onLogin: _authUser,
       onSignup: _authUser,
@@ -312,7 +312,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlutterLogin(
-      title: 'ECORP',
+      title: 'EarthWise',
       logo: 'assets/images/ecorp.png',
       onLogin: (_) => Future(null),
       onSignup: (_) => Future(null),
@@ -340,7 +340,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlutterLogin(
-      title: 'ECORP',
+      title: 'EarthWise',
       logo: 'assets/images/ecorp.png',
       onLogin: (_) => Future(null),
       onSignup: (_) => Future(null),
@@ -390,7 +390,7 @@ class LoginScreen extends StatelessWidget {
     );
 
     return FlutterLogin(
-      title: 'ECORP',
+      title: 'EarthWise',
       logo: 'assets/images/ecorp-lightgreen.png',
       onLogin: (_) => Future(null),
       onSignup: (_) => Future(null),
