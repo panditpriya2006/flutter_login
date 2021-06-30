@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       title: 'Login Demo',
       theme: ThemeData(
         // brightness: Brightness.dark,
-        primarySwatch: Colors.deepPurple,
+        primarySwatch: Colors.blueGrey,
         accentColor: Colors.orange,
         textSelectionTheme: TextSelectionThemeData(cursorColor: Colors.orange),
         // fontFamily: 'SourceSansPro',
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
             fontFamily: 'OpenSans',
             fontSize: 45.0,
             // fontWeight: FontWeight.w400,
-            color: Colors.orange,
+            color: Colors.white,
           ),
           button: TextStyle(
             // OpenSans is similar to NotoSans but the uppercases look a bit better IMO
