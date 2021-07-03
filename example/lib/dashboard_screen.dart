@@ -149,25 +149,14 @@ class _DashboardScreenState extends State<DashboardScreen>
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  '\$',
+                  '\ ',
                   style: theme.textTheme.headline3!.copyWith(
                     fontWeight: FontWeight.w300,
                     color: accentColor.shade400,
                   ),
                 ),
-                SizedBox(width: 5),
-                AnimatedNumericText(
-                  initialValue: 14,
-                  targetValue: 3467.87,
-                  curve: Interval(0, .5, curve: Curves.easeOut),
-                  controller: _loadingController!,
-                  style: theme.textTheme.headline3!.copyWith(
-                    foreground: Paint()..shader = linearGradient,
-                  ),
-                ),
               ],
             ),
-            Text('Account Balance', style: theme.textTheme.caption),
           ],
         ),
       ),
@@ -195,65 +184,35 @@ class _DashboardScreenState extends State<DashboardScreen>
 
     return GridView.count(
       padding: const EdgeInsets.symmetric(
-        horizontal: 32.0,
-        vertical: 20,
+        horizontal: 40.0,
+        vertical: 40,
       ),
       childAspectRatio: .9,
       // crossAxisSpacing: 5,
       crossAxisCount: 3,
       children: [
         _buildButton(
-          icon: Icon(FontAwesomeIcons.user),
-          label: 'Profile',
-          interval: Interval(0, aniInterval),
-        ),
-        _buildButton(
           icon: Container(
             // fix icon is not centered like others for some reasons
             padding: const EdgeInsets.only(left: 16.0),
             alignment: Alignment.centerLeft,
             child: Icon(
-              FontAwesomeIcons.moneyBillAlt,
+              FontAwesomeIcons.infoCircle,
               size: 20,
             ),
           ),
-          label: 'Fund Transfer',
+          label: 'Recycling Page',
           interval: Interval(step, aniInterval + step),
         ),
         _buildButton(
-          icon: Icon(FontAwesomeIcons.handHoldingUsd),
-          label: 'Payment',
-          interval: Interval(step * 2, aniInterval + step * 2),
-        ),
-        _buildButton(
-          icon: Icon(FontAwesomeIcons.chartLine),
-          label: 'Report',
-          interval: Interval(0, aniInterval),
-        ),
-        _buildButton(
-          icon: Icon(Icons.vpn_key),
-          label: 'Register',
+          icon: Icon(Icons.info),
+          label: 'Composting Page',
           interval: Interval(step, aniInterval + step),
         ),
         _buildButton(
-          icon: Icon(FontAwesomeIcons.history),
-          label: 'History',
-          interval: Interval(step * 2, aniInterval + step * 2),
-        ),
-        _buildButton(
-          icon: Icon(FontAwesomeIcons.ellipsisH),
-          label: 'Other',
-          interval: Interval(0, aniInterval),
-        ),
-        _buildButton(
-          icon: Icon(FontAwesomeIcons.search, size: 20),
-          label: 'Search',
+          icon: Icon(FontAwesomeIcons.infoCircle, size: 20),
+          label: 'Landfill page',
           interval: Interval(step, aniInterval + step),
-        ),
-        _buildButton(
-          icon: Icon(FontAwesomeIcons.slidersH, size: 20),
-          label: 'Settings',
-          interval: Interval(step * 2, aniInterval + step * 2),
         ),
       ],
     );
